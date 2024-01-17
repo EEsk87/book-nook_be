@@ -1,8 +1,14 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
+
+
 namespace FullStackAuth_WebAPI.Models
 {
-	public class favorite
+	public class Favorite
 	{
+		[Key]
 		public int ID { get; set; }
 		public string BookId { get; set; }
 		public string Title { get; set; }
